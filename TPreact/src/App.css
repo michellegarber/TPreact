@@ -11,14 +11,24 @@ body {
   padding-bottom: 5rem;
 }
 
-h1,
+
 h2 {
   color: white;
   padding: 3rem 0;
   text-align: center;
-
   text-transform: uppercase;
-
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 1px;
+}
+.container{
+  width: 40%;
+}
+h1{
+  text-align: center;
+  color: white;
+  padding: 3rem 0;
+  text-align: center;
+  text-transform: uppercase;
   font-family: 'Staatliches', cursive;
   letter-spacing: 1px;
 }

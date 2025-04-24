@@ -13,6 +13,7 @@ function App() {
     <script src="/static/js/vendors~main.chunk.js"></script>
     <script src="/static/js/main.chunk.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"/>
+    
     <div className='general'>
        <div id="root">
       <h1>ADMINISTRADOR DE PACIENTES</h1>
