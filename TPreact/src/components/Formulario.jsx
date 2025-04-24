@@ -1,6 +1,6 @@
 import React from "react";
 import './formulario.css'
-function Formulario(){
+export default function Formulario(){
    return(
     <div className="container">
         <div className="row">
@@ -17,5 +17,5 @@ function Formulario(){
         </div>
     </div>
    );
+   
 }
-export default Formulario;
