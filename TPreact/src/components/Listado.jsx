@@ -1,12 +1,18 @@
 import React from 'react';
-import Cita from './cita';
-import './listado.css'
+import './Listado.css';
+import Cita from './Cita';
 
-export default function Listado() {
+export default function Listado({ citas, eliminarCita }) {
   return (
     <div>
       <h2>Listado de Citas</h2>
-      <Cita />
+      {citas.length === 0 ? (
+        <p>No hay citas</p>
+      ) : (
+        citas.map((cita, index) => (
+          <Cita key={index} cita={cita} index={index} eliminarCita={eliminarCita} />
+        ))
+      )}
     </div>
   );
 }
