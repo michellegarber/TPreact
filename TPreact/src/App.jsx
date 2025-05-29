@@ -1,10 +1,17 @@
-import './App.css'
-import { useState } from 'react';
-import Formulario from './components/Formulario.jsx'
-import Listado from './components/Listado.jsx'
+import './App.css';
+import {useState, useEffect} from 'react';
+import Formulario from './components/Formulario.jsx';
+import Listado from './components/Listado.jsx';
 
 function App() {
-  const [citas, setCitas] = useState([]);
+  const citasIniciales = JSON.parse(localStorage.getItem('citas')) || [];
+
+  const [citas, setCitas] = useState(citasIniciales);
+
+  useEffect(() => {
+    localStorage.setItem('citas', JSON.stringify(citas));
+
+  }, [citas]);
 
   const eliminarCita = (index) => {
     const nuevasCitas = [...citas];
